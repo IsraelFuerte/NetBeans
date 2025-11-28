@@ -1,13 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Unidad4;
 
-/**
- *
- * @author USR
- */
+import java.util.Scanner;
+
 public class Practica1 {
+    public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
+        
+        int promedio;
+        
+        System.out.println("cual fue su promedio: ");
+        promedio= leer.nextInt();
+        
+        if (promedio>70) {
+            System.out.println("APROBADO");
+        } else {
+            System.out.println(" NO APROVADO");
+        }
+    }
     
 }
