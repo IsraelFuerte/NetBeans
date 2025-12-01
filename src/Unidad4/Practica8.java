@@ -7,12 +7,13 @@ public class Practica8 {
     public static void main(String[] args) {
         Scanner leer = new Scanner (System.in);
         int ti;
-        String di, tu;
+        String di = null, tu = null;
         float pag,im, tot,de;
         
         System.out.println("CUANTO TIEMPO HABLO POR TELEFONO(SEGUNDOS): ");
         ti=leer.nextInt();
         System.out.println("QUE DIA ES HOY? ");
+        di=leer.next();
         
         if (ti<5) {
             pag=1.00f;
@@ -35,7 +36,11 @@ public class Practica8 {
                 de=pag*0.10f;
             }
         }
-        
+        tot=ti*pag;
+        im=tot+de;
+        System.out.println("TOTAL A PAGAR ES $"+tot);
+        System.out.println("EL MPUESTO ES DE $"+de);
+        System.out.println("TOTAL DE LA LLAMADA $"+im);
     }
     
 }
